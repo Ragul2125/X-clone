@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.login-pg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  gap: 140px;
+  .login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+    color: white;
+    margin-top: 30px;
+    .left-side {
+      .left-img {
+        img {
+          cursor: pointer;
+          width: 100%;
+          height: 60vh;
+        }
+      }
+    }
+    .right-side {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 70px;
+      }
+      h3 {
+        padding-top: 25px;
+        font-size: 35px;
+        padding-bottom: 20px;
+      }
+      button {
+        width: 300px;
+        height: 40px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .or {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        hr {
+          width: 129px;
+        }
+      }
+      .condition {
+        p {
+          width: 300px;
+          font-size: 13px;
+        }
+        a {
+          color: #30affe;
+          text-decoration: none;
+        }
+      }
+      .button2 {
+        background-color: #30affe;
+      }
+      .sign-in {
+        margin-top: 30px;
+        button {
+          background-color: transparent;
+          border: 1px solid white;
+          color: white;
+        }
+      }
+      
+    }
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: white;  
+    font-size: 14px;  
+    color: #808080 ;
+    margin-left: 30px; 
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .login-pg{
+    display: flex;
+    gap:85px;
+  }.left-side{
+    display: none;
+  }
+  .right-side{
+    
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+      text-align: center;
+    }
+  }
+}
+

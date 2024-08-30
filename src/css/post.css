@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.post-pg {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.206);
+  /* background-color: #62889b, 0.4; */
+  position:fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: white;
+  .form {
+    width: 30%;
+    height: 45vh;
+    background-color: black;
+    z-index: 3;
+    border-radius: 20px;
+    header {
+      margin-top: 20px;
+      display: flex;
+      gap: 150px;
+      .xarrow {
+        padding: 10px;
+        img {
+          width: 45px;
+          height: 45px;
+          cursor: pointer;
+        }
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+    h1 {
+      font-size: 35px;
+      text-align: center;
+      padding: 20px;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 25px;
+      margin-top: 10px;
+      input {
+        width: 50%;
+        height: 50px;
+        border-radius: 10px;
+        padding-left: 20px;
+        text-align: justify;
+        outline: none;
+        border: 1px solid #515050;
+        background-color: transparent;
+        color: white;
+      }
+      .file{
+        border: none;
+    
+      }
+      .file:hover{
+        border: none;
+      }
+      input:hover {
+        border: 3px solid #34adf9;
+      }
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
+      
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 170px;
+        height: 40px;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #34adf9;
+        color: black;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .form {
+    min-width: 95vw;
+    height: 100vh;
+  }
+
+}
